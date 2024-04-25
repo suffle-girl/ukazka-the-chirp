@@ -5,7 +5,6 @@ import './index.css';
 
 const params = new URLSearchParams(window.location.search);
 const id = params.get("user");
-console.log(id)
 
 const response = await fetch (`http://localhost:4000/api/users/${id}`);
 const json = await response.json();
